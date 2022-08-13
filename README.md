@@ -1,3 +1,10 @@
+Create a **.env** file with this template:
 ```
-MYSQL_PORT={{ your value }} ADMINER_PORT={{ your value }} docker compose -f docker/docker-compose.yaml up -d
+COMPOSE_NAME={{ your value }}
+NGINX_PORT={{ your value }}
+```
+
+Replace the variable values and run:
+```
+docker compose -f docker-compose.yaml --env-file .env up -d
 ```
