@@ -1,0 +1,21 @@
+services:
+  mysql:
+    image: mysql:5.7
+    container_name: "db.mysql"
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+    logging:
+      options:
+        max-size: "10m"
+        max-file: "3"
+    ports:
+      - "3306:3306"
+  adminer:
+    image: adminer
+    container_name: "db.adminer"
+    ports:
+      - "8080:8080"
+    logging:
+      options:
+        max-size: "10m"
+        max-file: "3"
