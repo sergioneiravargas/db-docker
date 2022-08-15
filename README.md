@@ -1,7 +1,7 @@
 Create a **.env** file with this template:
 ```
-COMPOSE_NAME={{ your value }}
-NGINX_PORT={{ your value }}
+MYSQL_PORT={{ your value }}
+ADMINER_PORT={{ your value }}
 ```
 
 Replace the variable values and run:
